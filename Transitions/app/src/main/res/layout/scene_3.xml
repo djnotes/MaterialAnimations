@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+
+    <ImageView
+        android:id="@+id/view_1"
+        android:layout_width="@dimen/view_width_3"
+        android:layout_height="@dimen/view_height_3"
+        android:layout_above="@id/checks"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/image_1" />
+
+    <ImageView
+        android:id="@+id/view_2"
+        android:layout_width="@dimen/view_width_3"
+        android:layout_height="@dimen/view_height_3"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/checks"
+        android:src="@drawable/image_2"
+        />
+
+    <ImageView
+        android:id="@+id/view_3"
+        android:layout_width="@dimen/view_width_3"
+        android:layout_height="@dimen/view_height_3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/image_3" />
+
+    <ImageView
+        android:id="@+id/view_4"
+        android:layout_width="@dimen/view_width_3"
+        android:layout_height="@dimen/view_height_3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/image_4" />
+    <LinearLayout
+        android:id="@+id/grayscaleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/gray1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#000"
+            />
+
+        <View
+            android:id="@+id/gray2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#222"
+
+            />
+
+        <View
+            android:id="@+id/gray3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#444"
+
+            />
+
+        <View
+            android:id="@+id/gray4"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#666"
+            />
+
+        <View
+            android:id="@+id/gray5"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#888"
+            />
+
+        <View
+            android:id="@+id/gray6"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#aaa"
+            />
+
+    </LinearLayout>
+
+
+
+        <RadioGroup
+            android:id="@+id/checks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/scene_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_weight="0.25"
+                android:padding="@dimen/padding"
+                android:text="@string/scene_1"
+                android:onClick="onRadioClicked"
+                />
+
+            <RadioButton
+                android:id="@+id/scene_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_weight="0.25"
+                android:padding="@dimen/padding"
+                android:text="@string/scene_2"
+                android:onClick="onRadioClicked"
+                />
+
+            <RadioButton
+                android:id="@+id/scene_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_weight="0.25"
+                android:padding="@dimen/padding"
+                android:text="@string/scene_3"
+                android:onClick="onRadioClicked"
+                />
+
+            <RadioButton
+                android:id="@+id/scene_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_weight="0.25"
+                android:padding="@dimen/padding"
+                android:text="@string/scene_4"
+                android:onClick="onRadioClicked"
+                android:saveEnabled="true"
+                />
+        </RadioGroup>
+
+
+</RelativeLayout>

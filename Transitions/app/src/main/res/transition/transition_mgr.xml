@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionManager xmlns:android="http://schemas.android.com/apk/res/android">
+    <transition
+        android:fromScene="@layout/scene_1"
+        android:toScene="@layout/scene_2"
+        android:transition="@transition/changebounds" />
+    <transition
+        android:fromScene="@layout/scene_2"
+        android:toScene="@layout/scene_1"
+        android:transition="@transition/changebounds" />
+    <transition
+        android:toScene="@layout/scene_3"
+        android:transition="@transition/changebounds_fadein" />
+    <transition
+        android:fromScene="@layout/scene_3"
+        android:toScene="@layout/scene_1"
+        android:transition="@transition/changebounds_fadeout_seq" />
+    <transition
+        android:fromScene="@layout/scene_3"
+        android:toScene="@layout/scene_2"
+        android:transition="@transition/changebounds_fadeout_seq" />
+</transitionManager>
