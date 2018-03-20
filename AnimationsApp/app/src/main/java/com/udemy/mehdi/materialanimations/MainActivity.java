@@ -43,9 +43,8 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
 
     @Override
     public void onItemClick(View view, int position) {
-        Toast.makeText(mContext, "Item clicked: " + position, Toast.LENGTH_LONG).show();
+        setTitle(MyAdapter.TITLES[position]);
         switch(position) {
-
             case 3:
                 performAnimation();
                 break;
