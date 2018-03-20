@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Material Animations</string>
+    <string name="start">Start</string>
+    <string name="ripple">Ripple Effect</string>
+    <string name="circular_reveal">Circular Reveal</string>
+    <string name="activity_transition">Activity Transition</string>
+    <string name="move_view">Move View</string>
+</resources>
