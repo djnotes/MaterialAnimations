@@ -2,14 +2,13 @@ package com.udemy.mehdi.materialanimations;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemClickListener{
     ImageView image;
@@ -37,18 +36,21 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
 
     private void performAnimation() {
         ObjectAnimator animator = ObjectAnimator.ofFloat(image, "translationX", 200f);
-        animator.setDuration(1000);
+        animator.setDuration(500);
         animator.start();
     }
 
     @Override
     public void onItemClick(View view, int position) {
-        setTitle(MyAdapter.TITLES[position]);
-        switch(position) {
-            case 3:
+        int titleRes = MyAdapter.TITLES[position];
+        switch(titleRes) {
+            case R.string.animation_move_view:
                 performAnimation();
                 break;
 
+            case R.string.animation_lottie:
+                startActivity(new Intent(mContext, LottieActivity.class));
+                break;
         }
     }
 }

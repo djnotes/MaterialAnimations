@@ -19,7 +19,9 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
       R.string.ripple,
             R.string.circular_reveal,
             R.string.activity_transition,
-            R.string.move_view,
+            R.string.animation_move_view,
+            R.string.animation_lottie,
+
     };
 
     public MyAdapter(Context ctx) {

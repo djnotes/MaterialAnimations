@@ -4,5 +4,6 @@
     <string name="ripple">Ripple Effect</string>
     <string name="circular_reveal">Circular Reveal</string>
     <string name="activity_transition">Activity Transition</string>
-    <string name="move_view">Move View</string>
+    <string name="animation_move_view">Move View</string>
+    <string name="animation_lottie">Lottie Animation</string>
 </resources>
