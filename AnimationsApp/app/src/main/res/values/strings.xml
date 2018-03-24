@@ -7,4 +7,5 @@
     <string name="animation_move_view">Move View</string>
     <string name="animation_lottie">Lottie Animation</string>
     <string name="constraint_layout_animations">Constraint Layout Animations</string>
+    <string name="tap_here">Tap Here</string>
 </resources>
