@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
         initViews();
     }
 
+
     private void initViews() {
         image = findViewById(R.id.image);
         recyclerView = findViewById(R.id.recyclerView);
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
 
             case R.string.animation_lottie:
                 startActivity(new Intent(mContext, LottieActivity.class));
+                break;
+            case R.string.constraint_layout_animations:
+                startActivity(new Intent(mContext, ConstraintLayoutActivity.class));
                 break;
         }
     }

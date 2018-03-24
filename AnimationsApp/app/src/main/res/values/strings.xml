@@ -6,4 +6,5 @@
     <string name="activity_transition">Activity Transition</string>
     <string name="animation_move_view">Move View</string>
     <string name="animation_lottie">Lottie Animation</string>
+    <string name="constraint_layout_animations">Constraint Layout Animations</string>
 </resources>
