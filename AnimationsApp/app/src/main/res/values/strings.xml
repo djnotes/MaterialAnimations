@@ -8,4 +8,5 @@
     <string name="animation_lottie">Lottie Animation</string>
     <string name="constraint_layout_animations">Constraint Layout Animations</string>
     <string name="tap_here">Tap Here</string>
+    <string name="slide_animation">Slide Animation (L)</string>
 </resources>
