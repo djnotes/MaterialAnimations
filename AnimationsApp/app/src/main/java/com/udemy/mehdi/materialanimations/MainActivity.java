@@ -5,6 +5,7 @@ import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.support.transition.Slide;
 import android.support.transition.TransitionManager;
@@ -12,10 +13,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
+import android.view.animation.BounceInterpolator;
+import android.view.animation.Interpolator;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemClickListener{
@@ -72,7 +76,33 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
             case R.string.slide_animation:
                 initSlideAnimation(view);
                 break;
+            case R.string.simple_interpolator:
+                initInterpolator(view);
+            case R.string.animated_vector_drawable:
+                startActivity(new Intent(mContext, AVD_Activity.class));
         }
+    }
+
+
+    private void initInterpolator(View view) {
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+
+        Interpolator interpolator = null;
+        try {
+            interpolator = (Interpolator) Class.forName("com.udemy.mehdi" + "interpolator").newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        view.animate().setInterpolator(interpolator)
+                .setDuration(3000)
+                .setStartDelay(1000)
+                .translationYBy(-metrics.heightPixels)
+                .start();
     }
 
     private void initSlideAnimation(View view) {

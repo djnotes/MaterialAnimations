@@ -23,6 +23,9 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             R.string.animation_lottie,
             R.string.constraint_layout_animations,
             R.string.slide_animation,
+            R.string.simple_interpolator,
+            R.string.animated_vector_drawable,
+
 
     };
 

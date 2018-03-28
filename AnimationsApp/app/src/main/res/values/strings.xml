@@ -9,4 +9,6 @@
     <string name="constraint_layout_animations">Constraint Layout Animations</string>
     <string name="tap_here">Tap Here</string>
     <string name="slide_animation">Slide Animation (L)</string>
+    <string name="simple_interpolator">Simple Interpolator</string>
+    <string name="animated_vector_drawable">Animated Vector Drawable</string>
 </resources>

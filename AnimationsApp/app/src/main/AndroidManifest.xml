@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".LottieActivity" />
         <activity android:name=".ConstraintLayoutActivity" />
-        <activity android:name=".RippleActivity"></activity>
+        <activity android:name=".RippleActivity" />
+        <activity android:name=".AVD_Activity"></activity>
     </application>
 
 </manifest>
