@@ -11,4 +11,5 @@
     <string name="slide_animation">Slide Animation (L)</string>
     <string name="simple_interpolator">Simple Interpolator</string>
     <string name="animated_vector_drawable">Animated Vector Drawable</string>
+    <string name="custom_activity_animation">Custom Activity Animation</string>
 </resources>

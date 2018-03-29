@@ -80,8 +80,12 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
                 initInterpolator(view);
             case R.string.animated_vector_drawable:
                 startActivity(new Intent(mContext, AVD_Activity.class));
+            case R.string.custom_activity_animation:
+                startActivity(new Intent(mContext, CustomAnimationActivity.class));
+                break;
         }
     }
+
 
 
     private void initInterpolator(View view) {

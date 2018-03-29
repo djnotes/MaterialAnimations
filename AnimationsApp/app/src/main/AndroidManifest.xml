@@ -19,7 +19,9 @@
         <activity android:name=".LottieActivity" />
         <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".RippleActivity" />
-        <activity android:name=".AVD_Activity"></activity>
+        <activity android:name=".AVD_Activity" />
+        <activity android:name=".CustomAnimationActivity" />
+        <activity android:name=".DetailActivity" android:theme="@style/Transparent"/>
     </application>
 
 </manifest>
