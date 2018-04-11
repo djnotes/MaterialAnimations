@@ -85,6 +85,9 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
             case R.string.custom_activity_animation:
                 startActivity(new Intent(mContext, CustomAnimationActivity.class));
                 break;
+            case R.string.shared_element_transition:
+                startActivity(new Intent(mContext, SharedOne.class));
+                break;
         }
     }
 

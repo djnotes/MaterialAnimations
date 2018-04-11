@@ -21,7 +21,11 @@
         <activity android:name=".RippleActivity" />
         <activity android:name=".AVD_Activity" />
         <activity android:name=".CustomAnimationActivity" />
-        <activity android:name=".DetailActivity" android:theme="@style/Transparent"/>
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/Transparent" />
+        <activity android:name=".SharedOne" />
+        <activity android:name=".SharedTwo"></activity>
     </application>
 
 </manifest>
